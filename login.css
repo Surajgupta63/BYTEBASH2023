@@ -1,0 +1,78 @@
+.login-page h2{
+    color: black;
+}
+
+.login-page h4{
+    color: black;
+}
+.login-page{
+    background-color: rgb(188, 177, 177);
+    margin: 11rem 20rem;
+    padding: 1rem 0rem;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    height: 60vh;
+    /* border: transparent; */
+    border: 3px solid rgb(144, 131, 131);
+    border-radius: 1rem;
+    box-shadow: 0 0 3px 2px rgb(72, 23, 248);
+}
+
+
+
+.input{
+    width: 22rem;
+    padding: 1rem 1rem;
+    border-radius: 0.75rem;
+    font-size: 1.2rem;
+}
+
+input[type=text]:focus {
+    border: 5px solid #463ee3;
+    outline: #463ee3;
+  }
+
+
+.login-page a{
+    text-decoration: none;
+    /* color: white; */
+    font-size: 1rem;
+}
+
+.login-page a:hover{
+    text-decoration: underline blue;
+}
+
+
+.disc{
+    color: black;
+    margin: -2rem 0;
+    font-size: 0.85rem;
+    text-align: center;
+    /* margin-left: 6.5rem; */
+    width: 100%;
+}
+.btn{
+    background: #da0f47;
+    border-color: #da0f47;
+    padding: 0.5rem 1rem;
+    width: 18rem;
+    border-radius: 0.75rem;
+    /* color: white; */
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    border: none;
+    outline: none;
+}
+
+
+
+p{
+    display: flex;
+    justify-content: space-around;
+}
+span{
+    color: black;
+    font-size: 1rem;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload with Pregress</title>
+    <link rel="stylesheet" href="upload.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>File Uploader</header>
+        <form action="#">
+            <input type="file" class="file-input" name="file" hidden>
+            <span class="material-icons">cloud_upload</span>
+            <p>Browse File to Upload</p>
+        </form>
+        <section class="pregress-area">.
+            <li class="row">
+                <span class="material-icons">upload_file</span>
+                <div class="content">
+                    <div class="details">
+                        <span class="name">image upload karna hai</span>
+                        <span class="percent">50%</span>
+                    </div>
+                    <div class="pregress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </li>
+        </section>
+        <section class="uploaded-area">
+            <li class="row">
+                <div class="content">
+                    <span class="material-icons">upload_file</span>
+                    <div class="details">
+                        <span class="name">image upload karna hai</span>
+                        <span class="size">70 KB</span>
+                    </div>
+                </li>
+                <span class="material-icons">done</span>
+            </div>
+        </section>
+    </div>
+
+    <script src="upload.js"></script>
+</body>
+
+</html>

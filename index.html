@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>L2C - Music World</title>
+    <!-- <link rel="icon" href="./assets/logo.png"> -->
+    <link rel="icon" href="./Untitled_design-removebg.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../AI ChatBot/chat.css">
+    <script src="../AI ChatBot/chat.js" defer></script>
+</head>
+
+<body>
+    <button class="chatbot-toggler">
+        <span class="material-icons">mode_comment</span>
+        <span class="material-icons">close</span>
+    </button>
+
+    <div class="chatbot">
+        <header>
+            <h2>Chat Bot</h2>
+            <span class="material-icons">close</span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-icons">smart_toy</span>
+                <p>Hi there 👋 <br> How can I Help you?</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea placeholder="Enter a message..." required></textarea>
+            <span id="send-btn" class="material-icons">send</span>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-options">
+                    <a href="login.html"><button id="SignIn" class="badge nav-item hide">Sign In</button></a>
+                    <button class="badge nav-item dark-badge"><i class="fa-sharp fa-regular fa-circle-down"
+                            style="margin-right: 0.3rem;"></i>Install App</button>
+                    <a href="upload.html"><i class="fa-solid fa-upload"></i></a>
+                </div>
+            </div>
+            <!-- // Log in page wala code -->
+            <!-- <div id="pop" class="login-page">
+                <h2>Sign In or Sign Up</h2>
+                <h4>Enter your email to get started.</h4>
+                <input type="text" placeholder="Enter your mail ID" class="input"><br>
+                
+                <p><span><input type="checkbox">Remember me</span><a href="#">Forgot Password?</a></p>
+                <button class="btn">Continue</button>
+            </div> -->
+            
+            <!-- yaha khatam hua.. -->
+            
+            <img src="./pngwing.com.png" alt="no img" class="alan-walker">
+            <h2>Trending now near you</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card2img.jpeg" class="card-img" alt="">
+                    <p class="card-title">Top 50 - Hindi</p>
+                    <p class="card-info">Your daily updates of the most played tracks...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card3img.jpeg" class="card-img" alt="">
+                    <p class="card-title">Top 50 - Bhojpuri</p>
+                    <p class="card-info">Your daily updates of the most played tracks...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card4img.jpeg" class="card-img" alt="">
+                    <p class="card-title">Top 50 - Tamil</p>
+                    <p class="card-info">Your daily updates of the most played tracks...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card2img.jpeg" class="card-img" alt="">
+                    <p class="card-title">Top 50 - Chinese</p>
+                    <p class="card-info">Your daily updates of the most played tracks...</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card3img.jpeg" class="card-img" alt="">
+                    <p class="card-title">Top 50 - Bollywood</p>
+                    <p class="card-info">Your daily updates of the most played tracks...</p>
+                </div>
+                <div class="card">
+                    <img src="./3nQNiWdeH2Q-SD.jpg" class="card-img" alt="">
+                    <p class="card-title">Top 50 - English</p>
+                    <p class="card-info">Your daily updates of the most played tracks...</p>
+                </div>
+            </div>
+
+            <h2>Featured Charts</h2>
+            <div class="cards-container">
+                <div onclick="playPause()" class="card">    
+                    <img src="./3nQNiWdeH2Q-SD.jpg" class="card-img" alt="">
+                    <p class="card-title">NCS - janji</p>
+                    <p class="card-info">Your daily updates of the most played tracks...</p>
+                </div>
+                <div class="card">
+                    <img src="./cY0qzUnM2ME-HD.jpg" class="card-img" alt="">
+                    <p class="card-title">NCS - Sunzre</p>
+                    <p class="card-info">Your daily updates of the most played tracks...</p>
+                </div>
+                <div class="card">
+                    <img src="./X2iIqTVBV2U-HD.jpg" class="card-img" alt="">
+                    <p class="card-title">NCS - Electromia</p>
+                    <p class="card-info">Your daily updates of the most played tracks...</p>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="line"></div>
+            </footer>
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <div><a href="#"><img src="./3nQNiWdeH2Q-SD.jpg" class="album-img" alt=""></a></div>
+                <div class="album-title">
+                    <p class="album-p1">Janji - heroes</p>
+                    <p class="album-p2"><span class="span1">Sachin-Jigar, </span><span class="span2">Arijit Singh,
+                        </span><span class="span3">Amitabh Bhatacharya</span></p>
+                </div>
+                <div class="album-icons">
+                    <i class="fa-regular fa-heart" aria-colcount="heart"></i>
+                    <i class="fa-solid fa-ticket"></i>
+                </div>
+            </div>
+
+            <!-- <audio id="songs">
+                <source src="./Janji - Heroes Tonight (feat. Johnning) _ Progressive House _ NCS - Copyright Free Music.mp3" type="audio/mp3">
+            </audio> -->
+
+            <div class="player">
+
+                <div class="player-controls">
+                    <i class="fa-solid fa-backward"></i>
+                    <i onclick="playPause()" class="fa-solid fa-play" id="ctrlIcon"></i>
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+                <div class="playback-bar">
+                    <span class="cur-time">0:00</span>
+                    <input type="range" min="0" max="100" step="1" class="progress-bar">
+                    <span class="tot-time">4:30</span>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="pannels">
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <input type="range" min="0" max="100" step="1" class="control-bar">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <!-- <script src="../AI ChatBot/chat.js"></script> -->
+</body>
+
+</html>
